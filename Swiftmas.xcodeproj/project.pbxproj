@@ -10,6 +10,15 @@
 		6CFB581F2D09F2D70075FAEA /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CFB581E2D09F2D70075FAEA /* WidgetKit.framework */; };
 		6CFB58212D09F2D70075FAEA /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CFB58202D09F2D70075FAEA /* SwiftUI.framework */; };
 		6CFB58302D09F2D80075FAEA /* SwiftmasWidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 6CFB581C2D09F2D70075FAEA /* SwiftmasWidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6CFB583C2D09F3010075FAEA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFB58392D09F3010075FAEA /* ContentView.swift */; };
+		6CFB583D2D09F3010075FAEA /* SwiftmasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFB583A2D09F3010075FAEA /* SwiftmasApp.swift */; };
+		6CFB583E2D09F3010075FAEA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CFB58362D09F3010075FAEA /* Preview Assets.xcassets */; };
+		6CFB583F2D09F3010075FAEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CFB58382D09F3010075FAEA /* Assets.xcassets */; };
+		6CFB58472D09F3040075FAEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CFB58402D09F3040075FAEA /* Assets.xcassets */; };
+		6CFB58492D09F3040075FAEA /* SwiftmasWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFB58422D09F3040075FAEA /* SwiftmasWidgets.swift */; };
+		6CFB584A2D09F3040075FAEA /* SwiftmasWidgetsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFB58432D09F3040075FAEA /* SwiftmasWidgetsBundle.swift */; };
+		6CFB584B2D09F3040075FAEA /* SwiftmasWidgetsControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFB58442D09F3040075FAEA /* SwiftmasWidgetsControl.swift */; };
+		6CFB584C2D09F3040075FAEA /* SwiftmasWidgetsLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFB58452D09F3040075FAEA /* SwiftmasWidgetsLiveActivity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,33 +50,17 @@
 		6CFB581C2D09F2D70075FAEA /* SwiftmasWidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SwiftmasWidgetsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CFB581E2D09F2D70075FAEA /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		6CFB58202D09F2D70075FAEA /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		6CFB58362D09F3010075FAEA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6CFB58382D09F3010075FAEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6CFB58392D09F3010075FAEA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6CFB583A2D09F3010075FAEA /* SwiftmasApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftmasApp.swift; sourceTree = "<group>"; };
+		6CFB58402D09F3040075FAEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6CFB58412D09F3040075FAEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CFB58422D09F3040075FAEA /* SwiftmasWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftmasWidgets.swift; sourceTree = "<group>"; };
+		6CFB58432D09F3040075FAEA /* SwiftmasWidgetsBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftmasWidgetsBundle.swift; sourceTree = "<group>"; };
+		6CFB58442D09F3040075FAEA /* SwiftmasWidgetsControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftmasWidgetsControl.swift; sourceTree = "<group>"; };
+		6CFB58452D09F3040075FAEA /* SwiftmasWidgetsLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftmasWidgetsLiveActivity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		6CFB58312D09F2D80075FAEA /* Exceptions for "SwiftmasWidgets" folder in "SwiftmasWidgetsExtension" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 6CFB581B2D09F2D70075FAEA /* SwiftmasWidgetsExtension */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		6CFB58092D09EE640075FAEA /* Swiftmas */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Swiftmas;
-			sourceTree = "<group>";
-		};
-		6CFB58222D09F2D70075FAEA /* SwiftmasWidgets */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				6CFB58312D09F2D80075FAEA /* Exceptions for "SwiftmasWidgets" folder in "SwiftmasWidgetsExtension" target */,
-			);
-			path = SwiftmasWidgets;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		6CFB58042D09EE640075FAEA /* Frameworks */ = {
@@ -92,8 +85,8 @@
 		6CFB57FE2D09EE640075FAEA = {
 			isa = PBXGroup;
 			children = (
-				6CFB58092D09EE640075FAEA /* Swiftmas */,
-				6CFB58222D09F2D70075FAEA /* SwiftmasWidgets */,
+				6CFB583B2D09F3010075FAEA /* Swiftmas */,
+				6CFB58462D09F3040075FAEA /* SwiftmasWidgets */,
 				6CFB581D2D09F2D70075FAEA /* Frameworks */,
 				6CFB58082D09EE640075FAEA /* Products */,
 			);
@@ -117,6 +110,38 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6CFB58372D09F3010075FAEA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6CFB58362D09F3010075FAEA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6CFB583B2D09F3010075FAEA /* Swiftmas */ = {
+			isa = PBXGroup;
+			children = (
+				6CFB583A2D09F3010075FAEA /* SwiftmasApp.swift */,
+				6CFB58392D09F3010075FAEA /* ContentView.swift */,
+				6CFB58382D09F3010075FAEA /* Assets.xcassets */,
+				6CFB58372D09F3010075FAEA /* Preview Content */,
+			);
+			path = Swiftmas;
+			sourceTree = "<group>";
+		};
+		6CFB58462D09F3040075FAEA /* SwiftmasWidgets */ = {
+			isa = PBXGroup;
+			children = (
+				6CFB58432D09F3040075FAEA /* SwiftmasWidgetsBundle.swift */,
+				6CFB58422D09F3040075FAEA /* SwiftmasWidgets.swift */,
+				6CFB58442D09F3040075FAEA /* SwiftmasWidgetsControl.swift */,
+				6CFB58452D09F3040075FAEA /* SwiftmasWidgetsLiveActivity.swift */,
+				6CFB58402D09F3040075FAEA /* Assets.xcassets */,
+				6CFB58412D09F3040075FAEA /* Info.plist */,
+			);
+			path = SwiftmasWidgets;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -133,9 +158,6 @@
 			);
 			dependencies = (
 				6CFB582F2D09F2D80075FAEA /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				6CFB58092D09EE640075FAEA /* Swiftmas */,
 			);
 			name = Swiftmas;
 			packageProductDependencies = (
@@ -155,9 +177,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				6CFB58222D09F2D70075FAEA /* SwiftmasWidgets */,
 			);
 			name = SwiftmasWidgetsExtension;
 			packageProductDependencies = (
@@ -209,6 +228,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CFB583E2D09F3010075FAEA /* Preview Assets.xcassets in Resources */,
+				6CFB583F2D09F3010075FAEA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CFB58472D09F3040075FAEA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +248,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CFB583C2D09F3010075FAEA /* ContentView.swift in Sources */,
+				6CFB583D2D09F3010075FAEA /* SwiftmasApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +257,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CFB58492D09F3040075FAEA /* SwiftmasWidgets.swift in Sources */,
+				6CFB584A2D09F3040075FAEA /* SwiftmasWidgetsBundle.swift in Sources */,
+				6CFB584B2D09F3040075FAEA /* SwiftmasWidgetsControl.swift in Sources */,
+				6CFB584C2D09F3040075FAEA /* SwiftmasWidgetsLiveActivity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
