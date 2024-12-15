@@ -11,7 +11,15 @@ import SwiftUI
 struct SwiftmasApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FlipCountdown(
+                to: Date.now.addingTimeInterval(3*24*60*60),
+                digitSize: CGSize(width: 30, height: 60),
+                backgroundStyle: .red.shadow(.inner(radius: 1))
+            ) { text in
+                text
+                    .font(.system(size: 30).bold())
+                    .foregroundStyle(.white)
+            }
         }
     }
 }

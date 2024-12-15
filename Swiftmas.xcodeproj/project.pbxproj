@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C90A2552D0F30FC003DAB89 /* FlipCountdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C90A2502D0F30FC003DAB89 /* FlipCountdown.swift */; };
+		6C90A2562D0F30FC003DAB89 /* FlipDigit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C90A2522D0F30FC003DAB89 /* FlipDigit.swift */; };
+		6C90A2572D0F30FC003DAB89 /* FlipCountdownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C90A2512D0F30FC003DAB89 /* FlipCountdownCell.swift */; };
+		6C90A2592D0F3116003DAB89 /* NavigationTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C90A2582D0F3116003DAB89 /* NavigationTitle.swift */; };
 		6CFB581F2D09F2D70075FAEA /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CFB581E2D09F2D70075FAEA /* WidgetKit.framework */; };
 		6CFB58212D09F2D70075FAEA /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CFB58202D09F2D70075FAEA /* SwiftUI.framework */; };
 		6CFB58302D09F2D80075FAEA /* SwiftmasWidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 6CFB581C2D09F2D70075FAEA /* SwiftmasWidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -46,6 +50,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6C90A2502D0F30FC003DAB89 /* FlipCountdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipCountdown.swift; sourceTree = "<group>"; };
+		6C90A2512D0F30FC003DAB89 /* FlipCountdownCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipCountdownCell.swift; sourceTree = "<group>"; };
+		6C90A2522D0F30FC003DAB89 /* FlipDigit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipDigit.swift; sourceTree = "<group>"; };
+		6C90A2582D0F3116003DAB89 /* NavigationTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTitle.swift; sourceTree = "<group>"; };
 		6CFB58072D09EE640075FAEA /* Swiftmas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swiftmas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CFB581C2D09F2D70075FAEA /* SwiftmasWidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SwiftmasWidgetsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CFB581E2D09F2D70075FAEA /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
@@ -82,6 +90,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C90A2532D0F30FC003DAB89 /* FlipCountdown */ = {
+			isa = PBXGroup;
+			children = (
+				6C90A2502D0F30FC003DAB89 /* FlipCountdown.swift */,
+				6C90A2512D0F30FC003DAB89 /* FlipCountdownCell.swift */,
+				6C90A2522D0F30FC003DAB89 /* FlipDigit.swift */,
+			);
+			path = FlipCountdown;
+			sourceTree = "<group>";
+		};
+		6C90A2542D0F30FC003DAB89 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				6C90A2532D0F30FC003DAB89 /* FlipCountdown */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		6CFB57FE2D09EE640075FAEA = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +149,8 @@
 			children = (
 				6CFB583A2D09F3010075FAEA /* SwiftmasApp.swift */,
 				6CFB58392D09F3010075FAEA /* ContentView.swift */,
+				6C90A2582D0F3116003DAB89 /* NavigationTitle.swift */,
+				6C90A2542D0F30FC003DAB89 /* Components */,
 				6CFB58382D09F3010075FAEA /* Assets.xcassets */,
 				6CFB58372D09F3010075FAEA /* Preview Content */,
 			);
@@ -250,6 +278,10 @@
 			files = (
 				6CFB583C2D09F3010075FAEA /* ContentView.swift in Sources */,
 				6CFB583D2D09F3010075FAEA /* SwiftmasApp.swift in Sources */,
+				6C90A2592D0F3116003DAB89 /* NavigationTitle.swift in Sources */,
+				6C90A2552D0F30FC003DAB89 /* FlipCountdown.swift in Sources */,
+				6C90A2562D0F30FC003DAB89 /* FlipDigit.swift in Sources */,
+				6C90A2572D0F30FC003DAB89 /* FlipCountdownCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
