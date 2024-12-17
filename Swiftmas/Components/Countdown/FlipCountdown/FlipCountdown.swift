@@ -8,47 +8,25 @@
 import SwiftUI
 
 struct FlipCountdown<S: ShapeStyle, V: View>: View {
-    struct Components {
-        let day: Int
-        let hour: Int
-        let minute: Int
-        let second: Int
-        
-        init(day: Int = 0, hour: Int = 0, minute: Int = 0, second: Int = 0) {
-            self.day = day
-            self.hour = hour
-            self.minute = minute
-            self.second = second
-        }
-        
-        init(from dateComponents: DateComponents) {
-            day = dateComponents.day ?? 0
-            hour = dateComponents.hour ?? 0
-            minute = dateComponents.minute ?? 0
-            second = dateComponents.second ?? 0
-        }
-    }
-    
     let date: Date
     
     let digitSize: CGSize
     let backgroundStyle: S
     let textModifier: (Text) -> V
     
-    var countdownComponents: Components {
-        let components = Calendar.current.dateComponents([.day, .hour, .minute, .second], from: .now, to: date)
-        return Components(from: components)
+    var components: CountdownComponents {
+        CountdownComponents(until: date)
     }
     
     var body: some View {
         TimelineView(.periodic(from: .now, by: 1)) { timeline in
             HStack(spacing: 20) {
-                FlipDigit(value: countdownComponents.minute % 10, size: digitSize, backgroundStyle: backgroundStyle, textModifier: textModifier)
+                FlipDigit(value: components.minute % 10, size: digitSize, backgroundStyle: backgroundStyle, textModifier: textModifier)
                 
                 
                 ComponentCell(
                     "Days",
-                    component: countdownComponents.day,
+                    component: components.day,
                     digitSize: digitSize,
                     backgroundStyle: backgroundStyle,
                     textModifier: textModifier
@@ -56,7 +34,7 @@ struct FlipCountdown<S: ShapeStyle, V: View>: View {
                 
                 ComponentCell(
                     "Hrs",
-                    component: countdownComponents.hour,
+                    component: components.hour,
                     digitSize: digitSize,
                     backgroundStyle: backgroundStyle,
                     textModifier: textModifier
@@ -64,7 +42,7 @@ struct FlipCountdown<S: ShapeStyle, V: View>: View {
                 
                 ComponentCell(
                     "Min",
-                    component: countdownComponents.minute,
+                    component: components.minute,
                     digitSize: digitSize,
                     backgroundStyle: backgroundStyle,
                     textModifier: textModifier
@@ -72,7 +50,7 @@ struct FlipCountdown<S: ShapeStyle, V: View>: View {
                 
                 ComponentCell(
                     "Sec",
-                    component: countdownComponents.second,
+                    component: components.second,
                     digitSize: digitSize,
                     backgroundStyle: backgroundStyle,
                     textModifier: textModifier

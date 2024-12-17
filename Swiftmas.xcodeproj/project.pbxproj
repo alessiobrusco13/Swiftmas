@@ -7,10 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C27631B2D117949008634D6 /* ChristmasChecklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C27631A2D11793F008634D6 /* ChristmasChecklist.swift */; };
+		6C27631E2D117F12008634D6 /* PushableProminentButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C27631D2D117F12008634D6 /* PushableProminentButtonStyle.swift */; };
 		6C90A2552D0F30FC003DAB89 /* FlipCountdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C90A2502D0F30FC003DAB89 /* FlipCountdown.swift */; };
 		6C90A2562D0F30FC003DAB89 /* FlipDigit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C90A2522D0F30FC003DAB89 /* FlipDigit.swift */; };
 		6C90A2572D0F30FC003DAB89 /* FlipCountdownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C90A2512D0F30FC003DAB89 /* FlipCountdownCell.swift */; };
 		6C90A2592D0F3116003DAB89 /* NavigationTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C90A2582D0F3116003DAB89 /* NavigationTitle.swift */; };
+		6C90A26B2D0F4E4D003DAB89 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C90A26A2D0F4E4B003DAB89 /* HomeView.swift */; };
+		6C90A26D2D0F4E76003DAB89 /* BigTextCountDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C90A26C2D0F4E76003DAB89 /* BigTextCountDown.swift */; };
+		6C90A2702D0F50AC003DAB89 /* CountdownComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C90A26F2D0F50A4003DAB89 /* CountdownComponents.swift */; };
+		6C90A2722D0F5191003DAB89 /* ChristmasCountdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C90A2712D0F518B003DAB89 /* ChristmasCountdown.swift */; };
+		6C90A2742D0F5F40003DAB89 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C90A2732D0F5F3D003DAB89 /* Line.swift */; };
+		6C90A2762D0F6028003DAB89 /* DashedDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C90A2752D0F6025003DAB89 /* DashedDivider.swift */; };
+		6C90A2782D103DBF003DAB89 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C90A2772D103DBD003DAB89 /* Model.swift */; };
+		6C90A27A2D10486F003DAB89 /* BottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C90A2792D10486D003DAB89 /* BottomBar.swift */; };
 		6CFB581F2D09F2D70075FAEA /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CFB581E2D09F2D70075FAEA /* WidgetKit.framework */; };
 		6CFB58212D09F2D70075FAEA /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CFB58202D09F2D70075FAEA /* SwiftUI.framework */; };
 		6CFB58302D09F2D80075FAEA /* SwiftmasWidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 6CFB581C2D09F2D70075FAEA /* SwiftmasWidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -50,10 +60,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6C27631A2D11793F008634D6 /* ChristmasChecklist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChristmasChecklist.swift; sourceTree = "<group>"; };
+		6C27631D2D117F12008634D6 /* PushableProminentButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushableProminentButtonStyle.swift; sourceTree = "<group>"; };
 		6C90A2502D0F30FC003DAB89 /* FlipCountdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipCountdown.swift; sourceTree = "<group>"; };
 		6C90A2512D0F30FC003DAB89 /* FlipCountdownCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipCountdownCell.swift; sourceTree = "<group>"; };
 		6C90A2522D0F30FC003DAB89 /* FlipDigit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipDigit.swift; sourceTree = "<group>"; };
 		6C90A2582D0F3116003DAB89 /* NavigationTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTitle.swift; sourceTree = "<group>"; };
+		6C90A26A2D0F4E4B003DAB89 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		6C90A26C2D0F4E76003DAB89 /* BigTextCountDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigTextCountDown.swift; sourceTree = "<group>"; };
+		6C90A26F2D0F50A4003DAB89 /* CountdownComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownComponents.swift; sourceTree = "<group>"; };
+		6C90A2712D0F518B003DAB89 /* ChristmasCountdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChristmasCountdown.swift; sourceTree = "<group>"; };
+		6C90A2732D0F5F3D003DAB89 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		6C90A2752D0F6025003DAB89 /* DashedDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashedDivider.swift; sourceTree = "<group>"; };
+		6C90A2772D103DBD003DAB89 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		6C90A2792D10486D003DAB89 /* BottomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBar.swift; sourceTree = "<group>"; };
 		6CFB58072D09EE640075FAEA /* Swiftmas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swiftmas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CFB581C2D09F2D70075FAEA /* SwiftmasWidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SwiftmasWidgetsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CFB581E2D09F2D70075FAEA /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
@@ -90,6 +110,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C27631C2D11795D008634D6 /* ChristmasChecklist */ = {
+			isa = PBXGroup;
+			children = (
+				6C27631A2D11793F008634D6 /* ChristmasChecklist.swift */,
+			);
+			path = ChristmasChecklist;
+			sourceTree = "<group>";
+		};
 		6C90A2532D0F30FC003DAB89 /* FlipCountdown */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,9 +131,42 @@
 		6C90A2542D0F30FC003DAB89 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				6C90A2532D0F30FC003DAB89 /* FlipCountdown */,
+				6C27631D2D117F12008634D6 /* PushableProminentButtonStyle.swift */,
+				6C90A2792D10486D003DAB89 /* BottomBar.swift */,
+				6C90A2732D0F5F3D003DAB89 /* Line.swift */,
+				6C90A2752D0F6025003DAB89 /* DashedDivider.swift */,
+				6C90A26E2D0F5096003DAB89 /* Countdown */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		6C90A2682D0F4E37003DAB89 /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				6C90A2692D0F4E44003DAB89 /* Home */,
+				6C27631C2D11795D008634D6 /* ChristmasChecklist */,
+			);
+			path = Activities;
+			sourceTree = "<group>";
+		};
+		6C90A2692D0F4E44003DAB89 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				6C90A26A2D0F4E4B003DAB89 /* HomeView.swift */,
+				6C90A2582D0F3116003DAB89 /* NavigationTitle.swift */,
+				6C90A2712D0F518B003DAB89 /* ChristmasCountdown.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		6C90A26E2D0F5096003DAB89 /* Countdown */ = {
+			isa = PBXGroup;
+			children = (
+				6C90A26F2D0F50A4003DAB89 /* CountdownComponents.swift */,
+				6C90A26C2D0F4E76003DAB89 /* BigTextCountDown.swift */,
+				6C90A2532D0F30FC003DAB89 /* FlipCountdown */,
+			);
+			path = Countdown;
 			sourceTree = "<group>";
 		};
 		6CFB57FE2D09EE640075FAEA = {
@@ -149,7 +210,8 @@
 			children = (
 				6CFB583A2D09F3010075FAEA /* SwiftmasApp.swift */,
 				6CFB58392D09F3010075FAEA /* ContentView.swift */,
-				6C90A2582D0F3116003DAB89 /* NavigationTitle.swift */,
+				6C90A2772D103DBD003DAB89 /* Model.swift */,
+				6C90A2682D0F4E37003DAB89 /* Activities */,
 				6C90A2542D0F30FC003DAB89 /* Components */,
 				6CFB58382D09F3010075FAEA /* Assets.xcassets */,
 				6CFB58372D09F3010075FAEA /* Preview Content */,
@@ -276,7 +338,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C27631B2D117949008634D6 /* ChristmasChecklist.swift in Sources */,
+				6C90A2722D0F5191003DAB89 /* ChristmasCountdown.swift in Sources */,
+				6C27631E2D117F12008634D6 /* PushableProminentButtonStyle.swift in Sources */,
+				6C90A2762D0F6028003DAB89 /* DashedDivider.swift in Sources */,
 				6CFB583C2D09F3010075FAEA /* ContentView.swift in Sources */,
+				6C90A2742D0F5F40003DAB89 /* Line.swift in Sources */,
+				6C90A27A2D10486F003DAB89 /* BottomBar.swift in Sources */,
+				6C90A2702D0F50AC003DAB89 /* CountdownComponents.swift in Sources */,
+				6C90A26B2D0F4E4D003DAB89 /* HomeView.swift in Sources */,
+				6C90A2782D103DBF003DAB89 /* Model.swift in Sources */,
+				6C90A26D2D0F4E76003DAB89 /* BigTextCountDown.swift in Sources */,
 				6CFB583D2D09F3010075FAEA /* SwiftmasApp.swift in Sources */,
 				6C90A2592D0F3116003DAB89 /* NavigationTitle.swift in Sources */,
 				6C90A2552D0F30FC003DAB89 /* FlipCountdown.swift in Sources */,
@@ -440,8 +512,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -449,9 +521,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alessiobrusco.Swiftmas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -469,8 +543,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -478,9 +552,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alessiobrusco.Swiftmas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

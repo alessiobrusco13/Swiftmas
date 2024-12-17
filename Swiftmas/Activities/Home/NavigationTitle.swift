@@ -12,12 +12,15 @@ struct NavigationTitle: View {
     
     var body: some View {
         HStack {
-            Text(abbreviatedWeekday)
-                .font(.system(size: 50).weight(.heavy))
+            HStack(alignment: .firstTextBaseline) {
+                Text(abbreviatedWeekday)
+                    .font(.system(size: 50).weight(.heavy))
             
-            Circle()
-                .frame(width: 30, height: 30)
-                .foregroundStyle(.red.gradient)
+                Image(systemName: "app.gift.fill")
+                    .resizable()
+                    .frame(width: 40, height: 40)
+                    .foregroundStyle(.accent.gradient)
+            }
             
             Spacer()
             
@@ -33,7 +36,7 @@ struct NavigationTitle: View {
                     .fontWeight(.bold)
             }
         }
-        .padding()
+        .padding(.top)
     }
     
     var abbreviatedWeekday: String {
