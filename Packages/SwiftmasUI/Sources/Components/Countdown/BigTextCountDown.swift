@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct BigTextCountDown<FooterContent: View>: View {
+public struct BigTextCountDown<FooterContent: View>: View {
     let date: Date
     @Binding var minimized: Bool
     
@@ -33,7 +33,7 @@ struct BigTextCountDown<FooterContent: View>: View {
         )
     }
     
-    var body: some View {
+    public var body: some View {
         TimelineView(.periodic(from: .now, by: 1)) { _ in
             VStack(alignment: .leading, spacing: 0) {
                 enclosingLayout {
@@ -75,7 +75,7 @@ struct BigTextCountDown<FooterContent: View>: View {
         }
     }
     
-    init(to date: Date, minimized: Binding<Bool> = .constant(false), @ViewBuilder footer: @escaping () -> FooterContent) {
+    public init(to date: Date, minimized: Binding<Bool> = .constant(false), @ViewBuilder footer: @escaping () -> FooterContent) {
         self.date = date
         _minimized = minimized
         self.footer = footer

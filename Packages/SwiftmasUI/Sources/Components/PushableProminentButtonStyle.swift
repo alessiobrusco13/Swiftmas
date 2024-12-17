@@ -7,11 +7,16 @@
 
 import SwiftUI
 
-struct PushableProminentButtonStyle<S: Shape>: ButtonStyle {
+public struct PushableProminentButtonStyle<S: Shape>: ButtonStyle {
     let tint: Color
     let shape: S
     
-    func makeBody(configuration: Configuration) -> some View {
+    public init(tint: Color, shape: S) {
+        self.tint = tint
+        self.shape = shape
+    }
+    
+    public func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .foregroundStyle(.white)
             .padding()
@@ -31,11 +36,11 @@ struct PushableProminentButtonStyle<S: Shape>: ButtonStyle {
 }
 
 extension ButtonStyle where Self == PushableProminentButtonStyle<RoundedRectangle> {
-    static var pushableProminent: Self {
+    public static var pushableProminent: Self {
         PushableProminentButtonStyle(tint: .accentColor, shape: RoundedRectangle(cornerRadius: 16))
     }
     
-    static func pushableProminent(tint: Color) -> Self {
+    public static func pushableProminent(tint: Color) -> Self {
         PushableProminentButtonStyle(tint: tint, shape: RoundedRectangle(cornerRadius: 16))
     }
 }

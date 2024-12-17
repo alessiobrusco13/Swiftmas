@@ -92,7 +92,7 @@ struct FlipDigit<T: View, S: ShapeStyle>: View {
     }
 }
 
-fileprivate struct RotationModifier<T: View>: ViewModifier, Animatable {
+fileprivate struct RotationModifier<T: View>: ViewModifier, @preconcurrency Animatable {
     var rotation: Double
     var currentValue: Int
     var nextValue: Int

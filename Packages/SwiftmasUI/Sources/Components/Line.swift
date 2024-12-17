@@ -7,8 +7,10 @@
 
 import SwiftUI
 
-struct Line: Shape {
-    func path(in rect: CGRect) -> Path {
+public struct Line: Shape {
+    public init() { }
+    
+    public func path(in rect: CGRect) -> Path {
         var path = Path()
         path.move(to: .zero)
         path.addLine(to:  CGPoint(x: rect.maxX, y: 0))

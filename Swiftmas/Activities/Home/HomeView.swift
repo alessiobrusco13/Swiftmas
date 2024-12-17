@@ -5,12 +5,20 @@
 //  Created by Alessio Garzia Marotta Brusco on 15/12/24.
 //
 
+import MapKit
+import SwiftmasData
+import SwiftmasUI
 import SwiftUI
 
-struct HomeView: View {
+public struct HomeView: View {
     @State private var minimized = false
+    @Environment(Model.self) var model
     
-    var body: some View {
+    public init() {
+        
+    }
+    
+    public var body: some View {
         NavigationStack {
             VStack(alignment: .leading) {
                 NavigationTitle()
@@ -35,7 +43,7 @@ struct HomeView: View {
             .background(alignment: .bottom) {
                 GeometryReader { geometry in
                     Circle()
-                        .fill(.accent.opacity(0.6))
+                        .fill(.red.opacity(0.6))
                         .blur(radius: 80)
                         .position(
                             x: geometry.frame(in: .global).midX,

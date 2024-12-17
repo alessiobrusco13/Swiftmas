@@ -5,6 +5,8 @@
 //  Created by Alessio Garzia Marotta Brusco on 15/12/24.
 //
 
+import SwiftmasData
+import SwiftmasUI
 import SwiftUI
 
 struct ChristmasCountdown: View {
@@ -17,7 +19,7 @@ struct ChristmasCountdown: View {
                 Text("until ")
                 +
                 Text("Christmas")
-                    .foregroundStyle(.accent.gradient)
+                    .foregroundStyle(.red.gradient)
                     .fontWeight(.black)
                     .fontWidth(.expanded)
             )
