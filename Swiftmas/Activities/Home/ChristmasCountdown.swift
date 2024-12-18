@@ -19,7 +19,7 @@ struct ChristmasCountdown: View {
                 Text("until ")
                 +
                 Text("Christmas")
-                    .foregroundStyle(.red.gradient)
+                    .foregroundStyle(.accent.gradient)
                     .fontWeight(.black)
                     .fontWidth(.expanded)
             )

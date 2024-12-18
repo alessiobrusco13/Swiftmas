@@ -19,7 +19,7 @@ struct NavigationTitle: View {
                 Image(systemName: "app.gift.fill")
                     .resizable()
                     .frame(width: 40, height: 40)
-                    .foregroundStyle(.red.gradient)
+                    .foregroundStyle(.accent.gradient)
             }
             
             Spacer()

@@ -13,6 +13,7 @@
 		6C27636D2D11E1A8008634D6 /* NavigationTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2763662D11E1A8008634D6 /* NavigationTitle.swift */; };
 		6C27636E2D11E1A8008634D6 /* ChristmasCountdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2763672D11E1A8008634D6 /* ChristmasCountdown.swift */; };
 		6C27636F2D11E1A8008634D6 /* ChristmasChecklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2763692D11E1A8008634D6 /* ChristmasChecklist.swift */; };
+		6CAA6DC32D12CE5900161EDC /* ToggleChecklistButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAA6DC22D12CE5600161EDC /* ToggleChecklistButton.swift */; };
 		6CFB581F2D09F2D70075FAEA /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CFB581E2D09F2D70075FAEA /* WidgetKit.framework */; };
 		6CFB58212D09F2D70075FAEA /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CFB58202D09F2D70075FAEA /* SwiftUI.framework */; };
 		6CFB58302D09F2D80075FAEA /* SwiftmasWidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 6CFB581C2D09F2D70075FAEA /* SwiftmasWidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -58,6 +59,7 @@
 		6C2763662D11E1A8008634D6 /* NavigationTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTitle.swift; sourceTree = "<group>"; };
 		6C2763672D11E1A8008634D6 /* ChristmasCountdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChristmasCountdown.swift; sourceTree = "<group>"; };
 		6C2763692D11E1A8008634D6 /* ChristmasChecklist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChristmasChecklist.swift; sourceTree = "<group>"; };
+		6CAA6DC22D12CE5600161EDC /* ToggleChecklistButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleChecklistButton.swift; sourceTree = "<group>"; };
 		6CFB58072D09EE640075FAEA /* Swiftmas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swiftmas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CFB581C2D09F2D70075FAEA /* SwiftmasWidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SwiftmasWidgetsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CFB581E2D09F2D70075FAEA /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
@@ -102,6 +104,7 @@
 				6C2763652D11E1A8008634D6 /* HomeView.swift */,
 				6C2763662D11E1A8008634D6 /* NavigationTitle.swift */,
 				6C2763672D11E1A8008634D6 /* ChristmasCountdown.swift */,
+				6CAA6DC22D12CE5600161EDC /* ToggleChecklistButton.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CAA6DC32D12CE5900161EDC /* ToggleChecklistButton.swift in Sources */,
 				6C27636C2D11E1A8008634D6 /* HomeView.swift in Sources */,
 				6C27636D2D11E1A8008634D6 /* NavigationTitle.swift in Sources */,
 				6C27636E2D11E1A8008634D6 /* ChristmasCountdown.swift in Sources */,
