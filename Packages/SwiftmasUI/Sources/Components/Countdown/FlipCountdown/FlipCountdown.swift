@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct FlipCountdown<S: ShapeStyle, V: View>: View {
+public struct FlipCountdown<S: ShapeStyle, V: View>: View {
     let date: Date
     
     let digitSize: CGSize
@@ -18,13 +18,10 @@ struct FlipCountdown<S: ShapeStyle, V: View>: View {
         CountdownComponents(until: date)
     }
     
-    var body: some View {
+    public var body: some View {
         TimelineView(.periodic(from: .now, by: 1)) { timeline in
-            HStack(spacing: 20) {
-                FlipDigit(value: components.minute % 10, size: digitSize, backgroundStyle: backgroundStyle, textModifier: textModifier)
-                
-                
-                ComponentCell(
+            HStack(spacing: 15) {
+               ComponentCell(
                     "Days",
                     component: components.day,
                     digitSize: digitSize,
@@ -57,10 +54,12 @@ struct FlipCountdown<S: ShapeStyle, V: View>: View {
                 )
             }
         }
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel("\(components.day) days, \(components.hour) hours, \(components.minute) minutes, \(components.second) seconds until christmas.")
     }
     
     
-    init(to date: Date, digitSize: CGSize, backgroundStyle: S, textModifier: @escaping (Text) -> V) {
+    public init(to date: Date, digitSize: CGSize, backgroundStyle: S, textModifier: @escaping (Text) -> V) {
         self.date = date
         self.digitSize = digitSize
         self.backgroundStyle = backgroundStyle

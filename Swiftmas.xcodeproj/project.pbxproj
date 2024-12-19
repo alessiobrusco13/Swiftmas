@@ -17,6 +17,8 @@
 		6CC6B35F2D141C6800578109 /* SantaMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC6B35E2D141C6100578109 /* SantaMap.swift */; };
 		6CC6B3622D1424EA00578109 /* SantaMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC6B3612D1424E700578109 /* SantaMapView.swift */; };
 		6CC6B3642D1424F300578109 /* SantaMapGridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC6B3632D1424EE00578109 /* SantaMapGridItem.swift */; };
+		6CC6B3762D142CDB00578109 /* SnowEffectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC6B3752D142CDB00578109 /* SnowEffectButton.swift */; };
+		6CC6B3792D143BAC00578109 /* FlipCountdownGridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC6B3782D143BA300578109 /* FlipCountdownGridItem.swift */; };
 		6CFB581F2D09F2D70075FAEA /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CFB581E2D09F2D70075FAEA /* WidgetKit.framework */; };
 		6CFB58212D09F2D70075FAEA /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CFB58202D09F2D70075FAEA /* SwiftUI.framework */; };
 		6CFB58302D09F2D80075FAEA /* SwiftmasWidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 6CFB581C2D09F2D70075FAEA /* SwiftmasWidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -66,6 +68,8 @@
 		6CC6B35E2D141C6100578109 /* SantaMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SantaMap.swift; sourceTree = "<group>"; };
 		6CC6B3612D1424E700578109 /* SantaMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SantaMapView.swift; sourceTree = "<group>"; };
 		6CC6B3632D1424EE00578109 /* SantaMapGridItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SantaMapGridItem.swift; sourceTree = "<group>"; };
+		6CC6B3752D142CDB00578109 /* SnowEffectButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowEffectButton.swift; sourceTree = "<group>"; };
+		6CC6B3782D143BA300578109 /* FlipCountdownGridItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipCountdownGridItem.swift; sourceTree = "<group>"; };
 		6CFB58072D09EE640075FAEA /* Swiftmas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swiftmas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CFB581C2D09F2D70075FAEA /* SwiftmasWidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SwiftmasWidgetsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CFB581E2D09F2D70075FAEA /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
@@ -108,8 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				6C2763652D11E1A8008634D6 /* HomeView.swift */,
-				6C2763662D11E1A8008634D6 /* NavigationTitle.swift */,
 				6C2763672D11E1A8008634D6 /* ChristmasCountdown.swift */,
+				6C2763662D11E1A8008634D6 /* NavigationTitle.swift */,
 				6CAA6DC22D12CE5600161EDC /* ToggleChecklistButton.swift */,
 			);
 			path = Home;
@@ -119,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				6C2763692D11E1A8008634D6 /* ChristmasChecklist.swift */,
+				6CC6B3782D143BA300578109 /* FlipCountdownGridItem.swift */,
 			);
 			path = ChristmasChecklist;
 			sourceTree = "<group>";
@@ -129,6 +134,7 @@
 				6C2763682D11E1A8008634D6 /* Home */,
 				6C27636A2D11E1A8008634D6 /* ChristmasChecklist */,
 				6CC6B3602D1424D900578109 /* SantaMap */,
+				6CC6B3742D142C5C00578109 /* SnowEffect */,
 			);
 			path = Activities;
 			sourceTree = "<group>";
@@ -141,6 +147,14 @@
 				6CC6B3632D1424EE00578109 /* SantaMapGridItem.swift */,
 			);
 			path = SantaMap;
+			sourceTree = "<group>";
+		};
+		6CC6B3742D142C5C00578109 /* SnowEffect */ = {
+			isa = PBXGroup;
+			children = (
+				6CC6B3752D142CDB00578109 /* SnowEffectButton.swift */,
+			);
+			path = SnowEffect;
 			sourceTree = "<group>";
 		};
 		6CFB57FE2D09EE640075FAEA = {
@@ -321,7 +335,9 @@
 				6C27636D2D11E1A8008634D6 /* NavigationTitle.swift in Sources */,
 				6C27636E2D11E1A8008634D6 /* ChristmasCountdown.swift in Sources */,
 				6C27636F2D11E1A8008634D6 /* ChristmasChecklist.swift in Sources */,
+				6CC6B3792D143BAC00578109 /* FlipCountdownGridItem.swift in Sources */,
 				6CFB583C2D09F3010075FAEA /* ContentView.swift in Sources */,
+				6CC6B3762D142CDB00578109 /* SnowEffectButton.swift in Sources */,
 				6CC6B35F2D141C6800578109 /* SantaMap.swift in Sources */,
 				6CFB583D2D09F3010075FAEA /* SwiftmasApp.swift in Sources */,
 			);

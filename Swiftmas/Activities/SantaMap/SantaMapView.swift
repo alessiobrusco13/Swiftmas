@@ -10,6 +10,7 @@ import SwiftUI
 
 struct SantaMapView: View {
     @Environment(\.dismiss) private var dismiss
+    @State private var dismissTapped = false
     
     var body: some View {
         SantaMap()
@@ -24,6 +25,7 @@ struct SantaMapView: View {
                     }
                     .labelStyle(.iconOnly)
                     .buttonStyle(.pushableProminent)
+                    .sensoryFeedback(.success, trigger: dismissTapped)
                     .padding(.horizontal)
                     
                     Spacer()

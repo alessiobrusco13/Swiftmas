@@ -9,6 +9,7 @@ import SwiftUI
 
 public struct BigTextCountDown<FooterContent: View>: View {
     let date: Date
+    let eventName: String
     @Binding var minimized: Bool
     
     let footer: () -> FooterContent
@@ -73,17 +74,20 @@ public struct BigTextCountDown<FooterContent: View>: View {
             .font(.system(size: minimized ? 30 : 90))
             .fontWeight(.bold)
         }
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel("\(components.day) days, \(components.hour) hours, \(components.minute) minutes, \(components.second) seconds until \(eventName).")
     }
     
-    public init(to date: Date, minimized: Binding<Bool> = .constant(false), @ViewBuilder footer: @escaping () -> FooterContent) {
+    public init(to date: Date, eventName: String, minimized: Binding<Bool> = .constant(false), @ViewBuilder footer: @escaping () -> FooterContent) {
         self.date = date
+        self.eventName = eventName
         _minimized = minimized
         self.footer = footer
     }
 }
 
 #Preview {
-    BigTextCountDown(to: .now.addingTimeInterval(3*24*60*60), minimized: .constant(false)) {
+    BigTextCountDown(to: .now.addingTimeInterval(3*24*60*60), eventName: "Who knows", minimized: .constant(false)) {
         Text("Hello there, I'm a footer!")
             .font(.largeTitle)
     }

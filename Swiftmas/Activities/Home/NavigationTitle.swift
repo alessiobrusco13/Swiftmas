@@ -37,6 +37,8 @@ struct NavigationTitle: View {
             }
         }
         .padding(.top)
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel(Date.now.formatted(date: .long, time: .omitted))
     }
     
     var abbreviatedWeekday: String {

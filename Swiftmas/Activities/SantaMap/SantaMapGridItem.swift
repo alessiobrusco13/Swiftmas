@@ -21,7 +21,6 @@ struct SantaMapGridItem: View {
             VStack(alignment: .leading) {
             SantaMap()
                 .disabled(true)
-                .frame(width: 150, height: 150)
                 .clipShape(.rect(cornerRadius: 6))
                 .navigationTransition(.zoom(sourceID: "santaMapItem", in: namespace))
                 
@@ -29,10 +28,10 @@ struct SantaMapGridItem: View {
                     .foregroundStyle(.white)
                     .fontWeight(.bold)
             }
-            .padding(10)
+            .frame(width: 150, height: 150)
+            .padding()
             .background(.accent.gradient, in: .rect(cornerRadius: 16))
         }
-        
     }
 }
 

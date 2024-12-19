@@ -14,7 +14,7 @@ struct ChristmasCountdown: View {
     @Binding var minimized: Bool
     
     var body: some View {
-        BigTextCountDown(to: model.christmasDate, minimized: $minimized) {
+        BigTextCountDown(to: model.christmasDate, eventName: "Christmas", minimized: $minimized) {
             (
                 Text("until ")
                 +

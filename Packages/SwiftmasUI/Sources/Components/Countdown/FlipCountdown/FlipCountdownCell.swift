@@ -34,8 +34,10 @@ extension FlipCountdown {
         }
         
         var body: some View {
-            VStack(alignment: .leading) {
+            VStack(alignment: .leading, spacing: 1) {
                 Text(header)
+                    .foregroundStyle(.white)
+                    .fontWeight(.bold)
                 
                 HStack {
                     ForEach(digits) { digit in
