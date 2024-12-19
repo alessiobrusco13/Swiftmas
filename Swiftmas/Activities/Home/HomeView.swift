@@ -24,13 +24,21 @@ struct HomeView: View {
                     ChristmasCountdown(minimized: $showingChecklist)
                     
                     if showingChecklist {
-                        Text("Map with santa")
-                        Text("Presents todo list")
-                        Text("Music Button")
-                        Text("Snow effect?")
+//                        Text("Map with santa")
+//                        Text("Presents todo list")
+//                        Text("Music Button")
+//                        Text("Snow effect?")
+                        
+                        ChristmasChecklist()
+                            .transition(
+                                .move(edge: .bottom)
+                                .combined(with: .scale)
+                                .combined(with: .opacity)
+                            )
                     }
                 }
             }
+            .toolbar(.hidden)
             .safeAreaPadding(.horizontal)
             .safeAreaInset(edge: .bottom) {
                 ToggleChecklistButton(toggled: $showingChecklist)

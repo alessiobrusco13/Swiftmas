@@ -11,7 +11,10 @@ import CoreLocation
 @MainActor @Observable
 public class Model: NSObject, @preconcurrency CLLocationManagerDelegate {
     let locationManager = CLLocationManager()
+    let calendar = Calendar.current
+    
     public var userLocation: CLLocation?
+    public static var santaLocation = CLLocationCoordinate2D(latitude: 66.5039, longitude: 25.7294) // North Finland
     
     public override init() {
         super.init()
@@ -19,7 +22,7 @@ public class Model: NSObject, @preconcurrency CLLocationManagerDelegate {
     }
     
     public var christmasDate: Date {
-        let currentYear = Calendar.current.component(.year, from: .now)
+        let currentYear = calendar.component(.year, from: .now)
         
         guard let thisYearChristmas = Calendar.current.date(from: DateComponents(year: currentYear, month: 12, day: 25)) else {
             return .now
@@ -40,6 +43,22 @@ public class Model: NSObject, @preconcurrency CLLocationManagerDelegate {
     public func requestUserLocation() {
         locationManager.requestLocation()
     }
+    
+    public var santaProgress: Double {
+        let currentYear = calendar.component(.year, from: .now)
+        
+        guard
+            let firstOfDecember = Calendar.current.date(from: DateComponents(year: currentYear, month: 12, day: 1)),
+            firstOfDecember < Date.now,
+            Date.now < christmasDate
+        else {
+            return 0
+        }
+        
+        return Date.now.timeIntervalSince(firstOfDecember) / christmasDate.timeIntervalSince(firstOfDecember)
+    }
+    
+    // MARK: - CLLocationManagerDelegate Methods
     
     public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         print(locations)
